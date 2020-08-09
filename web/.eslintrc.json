@@ -35,7 +35,9 @@
         "tsx": "never"
       }
     ],
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "camelcase": "off",
+    "no-alert": "off"
   },
   "settings": {
     "import/resolver": {
