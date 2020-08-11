@@ -10,9 +10,10 @@ import logoImg from '../../assets/images/logo.png';
 
 interface PageHeaderProps {
   title: string;
+  headerRight?: React.ReactNode;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title }) => {
+const PageHeader: React.FC<PageHeaderProps> = ({ title, headerRight, children }) => {
   const { navigate } = useNavigation();
 
   function handleGoBack() {
@@ -29,9 +30,15 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title }) => {
         <Image source={logoImg} resizeMode="contain" />
       </View>
 
-      <Text style={styles.title}>
-        {title}
-      </Text>
+      <View style={styles.header}>
+        <Text style={styles.title}>
+          {title}
+        </Text>
+
+        {headerRight}
+      </View>
+
+      {children}
     </View>
   );
 };
