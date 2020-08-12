@@ -21,15 +21,15 @@ function GiveClasses() {
         source={giveClassesBgImg}
         style={styles.content}
       >
-        <Text style={styles.title}>Quer ser um Proffy?</Text>
+        <Text style={styles.title}>Want to be a Proffy?</Text>
 
         <Text style={styles.description}>
-          Para começar, você precisa se cadastrar como professor na nossa plataforma web
+          To start, you need to register as a teacher on our web platform
         </Text>
       </ImageBackground>
 
       <RectButton style={styles.okButton} onPress={handleNavigateBack}>
-        <Text style={styles.okButtonText}>Tudo bem</Text>
+        <Text style={styles.okButtonText}>Okay</Text>
       </RectButton>
     </View>
   );

@@ -13,6 +13,8 @@ import heartOutlineIcon from '../../assets/images/icons/heart-outline.png';
 import unfavoriteIcon from '../../assets/images/icons/unfavorite.png';
 import whatsappIcon from '../../assets/images/icons/whatsapp.png';
 
+import formatUSD from '../../utils/formatUSD';
+
 export interface Teacher {
   id: number;
   avatar: string;
@@ -82,9 +84,9 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
 
       <View style={styles.footer}>
         <Text style={styles.cost}>
-          Preço/hora
+          Price / hour
           {'    '}
-          <Text style={styles.costValue}>{teacher.cost}</Text>
+          <Text style={styles.costValue}>{formatUSD(teacher.cost)}</Text>
         </Text>
 
         <View style={styles.buttonsContainer}>

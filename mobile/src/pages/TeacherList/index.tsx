@@ -60,7 +60,7 @@ function Landing() {
   return (
     <View style={styles.container}>
       <PageHeader
-        title="Proffys disponíveis"
+        title="Available Proffys"
         headerRight={(
           <BorderlessButton onPress={handleToggleFiltersVisible}>
             <Feather name="filter" size={20} color="#fff" />
@@ -69,34 +69,34 @@ function Landing() {
       >
         { isFiltersVisible && (
         <View style={styles.searchForm}>
-          <Text style={styles.label}>Matéria</Text>
+          <Text style={styles.label}>Subject</Text>
           <TextInput
             style={styles.input}
             value={subject}
             onChangeText={(text) => setSubject(text)}
-            placeholder="Qual a matéria?"
+            placeholder="What is the subject?"
             placeholderTextColor="#c1bccc"
           />
 
           <View style={styles.inputGroup}>
             <View style={styles.inputBlock}>
-              <Text style={styles.label}>Dia da semana</Text>
+              <Text style={styles.label}>Week Day</Text>
               <TextInput
                 style={styles.input}
                 value={week_day}
                 onChangeText={(text) => setWeekDay(text)}
-                placeholder="Qual o dia?"
+                placeholder="Which day?"
                 placeholderTextColor="#c1bccc"
               />
             </View>
 
             <View style={styles.inputBlock}>
-              <Text style={styles.label}>Horário</Text>
+              <Text style={styles.label}>Time</Text>
               <TextInput
                 style={styles.input}
                 value={time}
                 onChangeText={(text) => setTime(text)}
-                placeholder="Qual o horário?"
+                placeholder="What time?"
                 placeholderTextColor="#c1bccc"
               />
             </View>
@@ -106,7 +106,7 @@ function Landing() {
             style={styles.submitButton}
             onPress={handleFiltersSubmit}
           >
-            <Text style={styles.submitButtonText}>Filtrar</Text>
+            <Text style={styles.submitButtonText}>Search</Text>
           </RectButton>
         </View>
         )}

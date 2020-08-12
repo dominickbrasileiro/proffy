@@ -39,9 +39,9 @@ function Landing() {
       <Image source={landingImg} style={styles.banner} />
 
       <Text style={styles.title}>
-        Seja bem-vindo,
+        Welcome,
         {'\n'}
-        <Text style={styles.titleBold}>O que deseja fazer?</Text>
+        <Text style={styles.titleBold}>What do you want to do?</Text>
       </Text>
 
       <View style={styles.buttonsContainer}>
@@ -52,7 +52,7 @@ function Landing() {
           <Image source={studyIcon} />
 
           <Text style={styles.buttonText}>
-            Estudar
+            Study
           </Text>
         </RectButton>
 
@@ -65,17 +65,17 @@ function Landing() {
           <Text
             style={styles.buttonText}
           >
-            Dar aulas
+            Teach
           </Text>
         </RectButton>
       </View>
 
       <Text style={styles.totalConnections}>
-        Total de
+        Total of
         {' '}
         {totalConnections}
         {' '}
-        conexões já realizadas
+        people connected
         {'  '}
         <Image source={heartIcon} />
       </Text>
