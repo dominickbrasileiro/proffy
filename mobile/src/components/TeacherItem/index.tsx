@@ -108,7 +108,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
           >
             <Image source={whatsappIcon} />
             <Text style={styles.contactButtonText}>
-              Entrar em contato
+              Get in touch
             </Text>
           </RectButton>
         </View>

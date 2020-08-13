@@ -61,7 +61,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
           href={`https://wa.me/${teacher.whatsapp}`}
         >
           <img src={whatsappIcon} alt="WhatsApp" />
-          Entrar em contato
+          Get in touch
         </a>
       </footer>
     </article>
