@@ -6,6 +6,8 @@ import api from '../../services/api';
 
 import './styles.css';
 
+import formatUSD from '../../utils/formatUSD';
+
 export interface Teacher {
   id: number;
   subject: string;
@@ -45,12 +47,10 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
 
       <footer>
         <p>
-          Preço/hora
+          Price / hour
           {' '}
           <strong>
-            R$
-            {' '}
-            {teacher.cost}
+            {formatUSD(teacher.cost)}
           </strong>
         </p>
 
